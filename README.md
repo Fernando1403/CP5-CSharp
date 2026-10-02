@@ -180,10 +180,6 @@ dotnet ef database update
 
 A Migration cria a estrutura necessária para a tabela `tarefas` no banco de dados `cp5_tarefas`.
 
-### Evidência da Migration
-
-**[INSERIR PRINT DA MIGRATION AQUI]**
-
 ---
 
 # Endpoints
@@ -207,120 +203,6 @@ Retorna todas as tarefas cadastradas.
 ```http
 200 OK
 ```
-
-### Evidência
-
-**[INSERIR PRINT DO GET /api/v1/tarefas AQUI]**
-
----
-
-## GET - Buscar tarefa por ID
-
-```http
-GET /api/v1/tarefas/{id}
-```
-
-Retorna uma tarefa específica através do seu identificador.
-
-### Respostas
-
-```http
-200 OK
-404 Not Found
-```
-
-### Evidência
-
-**[INSERIR PRINT DO GET /api/v1/tarefas/{id} AQUI]**
-
----
-
-## POST - Criar tarefa
-
-```http
-POST /api/v1/tarefas
-```
-
-Cria uma nova tarefa.
-
-### Exemplo de requisição
-
-```json
-{
-  "titulo": "Estudar C#",
-  "descricao": "Revisar conteúdo para a prova",
-  "dataVencimento": "2026-10-15T20:00:00"
-}
-```
-
-A data de criação é definida automaticamente pela API e uma nova tarefa é criada como não concluída.
-
-### Respostas
-
-```http
-201 Created
-400 Bad Request
-```
-
-### Evidência
-
-**[INSERIR PRINT DO POST /api/v1/tarefas AQUI]**
-
----
-
-## PUT - Atualizar tarefa
-
-```http
-PUT /api/v1/tarefas/{id}
-```
-
-Atualiza os dados de uma tarefa existente.
-
-### Exemplo de requisição
-
-```json
-{
-  "id": 1,
-  "titulo": "Estudar C# e .NET",
-  "descricao": "Revisar Entity Framework Core",
-  "dataVencimento": "2026-10-20T20:00:00",
-  "concluida": true
-}
-```
-
-### Respostas
-
-```http
-204 No Content
-400 Bad Request
-404 Not Found
-```
-
-### Evidência
-
-**[INSERIR PRINT DO PUT /api/v1/tarefas/{id} AQUI]**
-
----
-
-## DELETE - Excluir tarefa
-
-```http
-DELETE /api/v1/tarefas/{id}
-```
-
-Exclui uma tarefa através do seu identificador.
-
-### Respostas
-
-```http
-204 No Content
-404 Not Found
-```
-
-### Evidência
-
-**[INSERIR PRINT DO DELETE /api/v1/tarefas/{id} AQUI]**
-
 ---
 
 # Status HTTP Utilizados
@@ -347,37 +229,43 @@ Os endpoints foram testados utilizando o Swagger e/ou Postman.
 
 ## GET - Listagem
 
-**[INSERIR PRINT AQUI]**
+**[<img width="1740" height="867" alt="image" src="https://github.com/user-attachments/assets/37b8c592-ed66-4de6-b198-4276f015ada4" />
+]**
 
 ---
 
 ## GET - Por ID
 
-**[INSERIR PRINT AQUI]**
+**[<img width="1917" height="955" alt="image" src="https://github.com/user-attachments/assets/92db194e-629e-4797-be00-ad697f1d00d0" />
+]**
 
 ---
 
 ## POST - Criação
 
-**[INSERIR PRINT AQUI]**
+**[<img width="1916" height="1007" alt="image" src="https://github.com/user-attachments/assets/8c49da23-60cd-4c98-8d5e-9159d1983709" />
+]**
 
 ---
 
 ## PUT - Atualização
 
-**[INSERIR PRINT AQUI]**
+**[<img width="1917" height="972" alt="image" src="https://github.com/user-attachments/assets/265df8bb-1d3c-4e04-a095-2fef88305bb9" />
+]**
 
 ---
 
 ## DELETE - Exclusão
 
-**[INSERIR PRINT AQUI]**
+**[<img width="1917" height="972" alt="image" src="https://github.com/user-attachments/assets/cd229fac-870c-4b27-a379-1734adf5c434" />
+]**
 
 ---
 
 ## Banco de Dados
 
-**[INSERIR PRINT DO MYSQL WORKBENCH MOSTRANDO A TABELA TAREFAS AQUI]**
+**[<img width="1917" height="917" alt="image" src="https://github.com/user-attachments/assets/724e4ef7-92a8-4fd4-9912-6e6f09649b1e" />
+]**
 
 ---
 
