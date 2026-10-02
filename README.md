@@ -190,14 +190,6 @@ A API utiliza versionamento através da rota:
 /api/v1
 ```
 
-## GET - Listar todas as tarefas
-
-```http
-GET /api/v1/tarefas
-```
-
-Retorna todas as tarefas cadastradas.
-
 ### Resposta esperada
 
 ```http
@@ -223,7 +215,8 @@ Os endpoints foram testados utilizando o Swagger e/ou Postman.
 
 ## Swagger
 
-**[INSERIR PRINT DO SWAGGER AQUI]**
+**[<img width="1917" height="952" alt="image" src="https://github.com/user-attachments/assets/5946ce5f-8a70-4df8-af95-6cc020e808c9" />
+]**
 
 ---
 
