@@ -1,0 +1,22 @@
+{
+  "info": {"name":"ControleTarefas - CP5","schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "variable": [{"key":"baseUrl","value":"https://localhost:7001"},{"key":"id","value":"1"}],
+  "item": [
+    {"name":"Listar tarefas","request":{"method":"GET","url":"{{baseUrl}}/api/v1/tarefas"}},
+    {"name":"Criar tarefa","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{
+  "titulo": "Estudar C#",
+  "descricao": "Revisar API REST e Entity Framework Core",
+  "dataVencimento": "2026-12-15T20:00:00",
+  "concluida": false
+}"},"url":"{{baseUrl}}/api/v1/tarefas"}},
+    {"name":"Buscar tarefa","request":{"method":"GET","url":"{{baseUrl}}/api/v1/tarefas/{{id}}"}},
+    {"name":"Atualizar tarefa","request":{"method":"PUT","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{
+  "id": 1,
+  "titulo": "Estudar C# e EF Core",
+  "descricao": "Revisar os endpoints da API",
+  "dataVencimento": "2026-12-20T20:00:00",
+  "concluida": true
+}"},"url":"{{baseUrl}}/api/v1/tarefas/{{id}}"}},
+    {"name":"Excluir tarefa","request":{"method":"DELETE","url":"{{baseUrl}}/api/v1/tarefas/{{id}}"}}
+  ]
+}
